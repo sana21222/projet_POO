@@ -1,0 +1,8 @@
+# Dossiers et fichiers Visual Studio/VS Code à ignorer
+.vs/
+*.vsidx
+*.user
+
+# Fichiers de log ou exécutables
+*.log
+*.exe

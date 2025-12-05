@@ -2,7 +2,6 @@
 #include <iostream>
 
 namespace JeuVie {
-	GridBase::GridBase(int largeur, int hauteur) : largeur(largeur), hauteur(hauteur) {}
 	int GridBase::getLargeur() const {
 		return largeur;
 	}

@@ -24,7 +24,6 @@ int main() {
         case 2:
             config = configurations["blinker"];
             break;
-        case 3:
         case 3: {
             std::cout << "Nom du fichier: ";
             std::string nomFichier;
@@ -40,7 +39,11 @@ int main() {
 
     jeu.initialiser(config);
     jeu.executer(20);
-    // Nettoyage
+    
+    if (configFromFile) {
+        delete config;
+    }
+    
     for (auto& pair : configurations) {
         delete pair.second;
     }

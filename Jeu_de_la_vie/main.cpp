@@ -31,11 +31,16 @@ int main() {
         case 2:
             config = configurations["blinker"];
             break;
-        case 3:
+        case 3: {
             std::cout << "Nom du fichier: ";
             std::string nomFichier;
             std::cin >> nomFichier;
             config = new ConfigurationFichier(nomFichier);
+            break;
+        }
+        default:
+            std::cout << "Choix invalide, utilisation du glider par défaut" << std::endl;
+            config = configurations["glider"];
             break;
     }
 

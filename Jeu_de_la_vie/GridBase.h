@@ -1,5 +1,4 @@
 #pragma once
-
 namespace JeuVie {
 	class GridBase {
 	protected:
@@ -12,5 +11,6 @@ namespace JeuVie {
 	int getHauteur() const;
 	void afficher() const;
 	void prochaineGeneration();
+	virtual void afficher() const = 0;
 	};
 }

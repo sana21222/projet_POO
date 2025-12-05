@@ -3,13 +3,13 @@
 #include "Cellule.h"
 #include <vector>
 #include <iostream>
-
 namespace JeuVie {
 	class Population : public GridBase {
 	private:
 		std::vector<std::vector<Cellule*>> grille;
 		int generation;
 		int CompterVoisinsVivants(int x, int y) const;
+		int compterVoisinsVivants(int x, int y) const;
 	public:
 		Population(int largeur, int hauteur);
 		~Population();
@@ -19,4 +19,5 @@ namespace JeuVie {
 		void prochaineGeneration();
 		int getGeneration() const;
 	};
+	std::ostream& operator<<(std::ostream& os, const Population& p);
 }

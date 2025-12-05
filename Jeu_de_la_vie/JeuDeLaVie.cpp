@@ -24,7 +24,7 @@ void JeuDeLaVie::initialiser(ConfigBase* cfg) {
 void JeuDeLaVie::executer(int nbGenerations) {
     for (int i = 0; i < nbGenerations; i++) {
         afficher();
-        population->prochaine_generation();
+        population->prochaineGeneration();
 
         // Pause pour visualisation
         std::this_thread::sleep_for(std::chrono::milliseconds(500));

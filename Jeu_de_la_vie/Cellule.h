@@ -15,7 +15,7 @@ namespace JeuVie {
 		bool estVivante() const;
 		void changerEtat(Etat* nouvelEtat);
 		Etat* getEtat() const;
-		void evoluer(int nbVoisinsVivants);
+		Cellule evoluer(int nbVoisinsVivants) const;
 		void afficher() const;
 		int getX() const;
 		int getY() const;

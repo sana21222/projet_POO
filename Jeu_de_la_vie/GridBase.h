@@ -5,14 +5,11 @@ namespace JeuVie {
 		int largeur;
 		int hauteur;
 	public:
-	GridBase(int largeur, int hauteur) : largeur(largeur), hauteur(hauteur) {}
-	GridBase(int largeur, int hauteur);
-	virtual ~GridBase() = default;
-	int getLargeur() const;
-	int getHauteur() const;
-	void afficher() const;
-	void prochaineGeneration();
-	virtual void afficher() const = 0;
-	virtual void prochaineGeneration() = 0;
+		GridBase(int largeur, int hauteur) : largeur(largeur), hauteur(hauteur) {}
+		virtual ~GridBase() = default;
+		int getLargeur() const;
+		int getHauteur() const;
+		virtual void afficher() const = 0;
+		virtual void prochaineGeneration() = 0;
 	};
 }

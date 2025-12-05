@@ -37,7 +37,7 @@ void Population::afficher() const {
     std::cout << std::endl;
 }
 
-void Population::prochaine_generation() {
+void Population::prochaineGeneration() {
     // Création d'une grille temporaire pour stocker les nouveaux états
     std::vector<std::vector<Etat*>> nouveauxEtats(hauteur);
 
@@ -99,6 +99,10 @@ Cellule* Population::getCellule(int x, int y) const {
         return grille[y][x];
     }
     return nullptr;
+}
+
+int Population::getGeneration() const {
+    return generation;
 }
 
 std::ostream& operator<<(std::ostream& os, const Population& p) {

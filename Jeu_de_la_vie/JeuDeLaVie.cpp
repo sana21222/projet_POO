@@ -18,7 +18,7 @@ void JeuDeLaVie::initialiser(ConfigBase* cfg) {
 void JeuDeLaVie::executer(int nbGenerations) {
     for (int i = 0; i < nbGenerations; i++) {
         afficher();
-        population->prochaine_generation();
+        population->prochaineGeneration();
         population->prochaineGeneration();
 
         // Pause pour visualisation

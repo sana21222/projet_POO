@@ -4,19 +4,18 @@
 
 namespace JeuVie {
 
-class JeuDeLaVie {
-private:
-    Population* population;
-    ConfigBase* config;
+    class JeuDeLaVie {
+    private:
+        Population* population;
+        ConfigBase* config;
 
-public:
-    JeuDeLaVie();
-    ~JeuDeLaVie();
+    public:
+        JeuDeLaVie();
+        ~JeuDeLaVie();
 
-    void initialiser(ConfigBase* config);
-    void executer(int nbGenerations);
-    void afficher() const;
-};
+        void initialiser(ConfigBase* config);
+        void executer(int nbGenerations);
+        void afficher() const;
+    };
 
 }
-

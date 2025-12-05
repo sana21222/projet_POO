@@ -1,4 +1,4 @@
-#include "etat.h"
+#include "Etat.h"
 
 namespace JeuVie {
 	class EtatVivante : public Etat {

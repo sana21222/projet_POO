@@ -1,6 +1,5 @@
 #pragma once
 #include "Etat.h"
-
 namespace JeuVie {
 	class Cellule {
 	private:
@@ -16,8 +15,8 @@ namespace JeuVie {
 		void changerEtat(Etat* nouvelEtat);
 		Etat* getEtat() const;
 		void evoluer(int nbVoisinsVivants);
+		Cellule evoluer(int nbVoisinsVivants) const;
 		void afficher() const;
 		int getX() const;
 		int getY() const;
-	};
-}
+	

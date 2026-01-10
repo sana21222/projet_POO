@@ -3,10 +3,10 @@
 
 namespace JeuVie {
 
-class ConfigBase {
-public:
-    virtual ~ConfigBase() = default;
-    virtual bool charger(Population& population) = 0;
-};
+    class ConfigBase {
+    public:
+        virtual ~ConfigBase() = default;
+        virtual bool charger(Population& population) = 0;
+    };
 
 }
